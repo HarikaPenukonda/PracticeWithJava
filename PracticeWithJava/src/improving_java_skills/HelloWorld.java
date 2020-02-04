@@ -1,4 +1,4 @@
-package impovingSkills;
+package improving_java_skills;
 
 public class HelloWorld {
 
