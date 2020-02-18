@@ -5,7 +5,9 @@ public class FloatConcept {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		float a , b, c;
+		float a , b, c ;
+		
+		int d;
 		
 		a = 5;
 		
@@ -13,7 +15,13 @@ public class FloatConcept {
 		
 		c = a / b;
 		
-		System.out.print(c);
+		// * % / have greater precedence than +, -
+		
+		
+		d = 5 + 5 * 6;
+		
+		System.out.print(c+ ","+ d);
+		
 		
 
 	}
