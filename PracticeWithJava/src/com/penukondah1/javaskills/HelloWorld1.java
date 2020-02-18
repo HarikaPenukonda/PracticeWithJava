@@ -19,12 +19,19 @@ package com.penukondah1.javaskills;
 
 public class HelloWorld1 {
 	
+	
+	Integer instanceVariable = 10; // This is instance variable, it has instance/object level
+	
+	static Integer staticVariable = 30; // Static variable, which is at class level.
+	
 	public void test() {
 		System.out.print("Non static");
+		int lv = 10; // this is a local variable, cannot be used outside the method
 	}
+
 	
 	public static void test1() {
-		System.out.print("Static Method");
+		System.out.print(" Static Method ");
 	}
 
 	public static void main(String[] args) {
@@ -32,9 +39,16 @@ public class HelloWorld1 {
 		
 		System.out.println("Hello World");
 		
-		HelloWorld1 obj = new HelloWorld1();
-		obj.test();
+		HelloWorld1 obj1 = new HelloWorld1();
+		obj1.instanceVariable = 40;  //instance variable
+		HelloWorld1 obj2 = new HelloWorld1();
+		obj2.instanceVariable = 60;
+		
+		HelloWorld1.staticVariable = 40; //static variable
+		
+		
 		test1();
+		obj1.test();
 
 	}
 
