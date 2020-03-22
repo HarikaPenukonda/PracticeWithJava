@@ -17,7 +17,7 @@ public class DataTypes {
 		
 		System.out.println(b + " " + s + " " + i + " " + l + " " + f + " " + c + " " + d +" " + boo + " " + str);
 		
-		
+		System.out.println(10/0.0);
 		
 		
 		
