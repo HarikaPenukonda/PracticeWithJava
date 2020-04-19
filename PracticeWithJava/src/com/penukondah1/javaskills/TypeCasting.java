@@ -23,7 +23,7 @@ public class TypeCasting {
 		
 		double d = 130.456;
 		int a = (int)d;
-		System.out.println(a);
+		System.out.println(a); 
 		byte c = (byte)d;
 		System.out.println(c);
 		
