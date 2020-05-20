@@ -10,7 +10,7 @@ public class Case4 {
 		
 		PrintWriter pw = new PrintWriter("abc.txt");
 		pw.println("Hello");
-		System.out.println(10/0);
+		//System.out.println(10/0);
 		/*without throws keyword : Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
 	Unhandled exception type FileNotFoundException
 
@@ -19,6 +19,8 @@ public class Case4 {
 	with throws keyword : Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at com.penukondah1.exceptionHandling.Case4.main(Case4.java:13)
 	*/
+		// FileNotFoundException is checked Exception
+		// ArithemeticException is unchecked Exception
 
 	}
 
