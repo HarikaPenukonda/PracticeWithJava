@@ -2,11 +2,11 @@ package com.penukondah1.MultiThreading;
 
 public class Display1 {
 	
-	public void displayN() 
+	public synchronized void displayN() 
 	{
 			for(int i=0;i<10;i++) 
 			{
-				System.out.println(i);
+				System.out.print(i);
 				try {
 					Thread.sleep(2000);
 			}
@@ -18,11 +18,11 @@ public class Display1 {
 		}
 	}
 	
-	public void displayC() 
+	public synchronized void displayC() 
 	{
 		for(int i=65;i<75;i++) 
 		{
-			System.out.println((char)i);
+			System.out.print((char)i);
 		
 			try {
 				Thread.sleep(2000);
