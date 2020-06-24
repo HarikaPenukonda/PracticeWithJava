@@ -9,13 +9,15 @@ public class TreeSetDemo1 {
 		
 		TreeSet t = new TreeSet();
 		t.add(new StringBuffer("A"));
+		t.add(new StringBuffer("A"));
+		t.add(new StringBuffer("A"));
 		t.add(new StringBuffer("Z"));
 		t.add(new StringBuffer("L"));
 		t.add(new StringBuffer("B"));
 		t.add(new StringBuffer("M"));
 		t.add(new StringBuffer("C"));
 		
-		System.out.println(t); // [A, B, C, L, M, Z] insertion order is preserved
+		System.out.println(t); // [A, B, C, L, M, Z] insertion order is preserved, duplicates are not allowed
 
 	}
 
