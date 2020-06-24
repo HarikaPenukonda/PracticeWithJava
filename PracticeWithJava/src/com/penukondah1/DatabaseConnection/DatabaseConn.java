@@ -17,7 +17,8 @@ public class DatabaseConn {
 	
 	public static void main (String [] args) throws Exception
 	{
-		String url = "jdbc:mysql://localhost:3306/HarikaDB";
+		//String url = "jdbc:mysql://localhost:3306/HarikaDB";
+		String url = "jdbc:mysql://localhost:3306/HarikaDB?serverTimezone=UTC";
 		String username = "root";
 		String password = "rootuser";
 		String query = "select sname from student where rollno=2";
