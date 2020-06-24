@@ -12,10 +12,11 @@ public class TreeSetDemo {
 		t.add("a");
 		t.add("B");
 		t.add("M");
-		t.add("Z");
+		t.add("Z"); 
 		//System.out.println(t.add(new Integer(10))); // ClassCastException as it does not allow Heterogenous objects
 		//System.out.println(t.add(null)); // NullPointerException
-		System.out.println(t); // [A, B, M, Z, a]
+		//t.add("A"); // NullPointerException
+		System.out.println(t); // [A, B, M, Z, a] insertion order is preserved
 		
 
 	}
