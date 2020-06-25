@@ -8,7 +8,7 @@ public class TreeSetDemoSB {
 		// TODO Auto-generated method stub
 		
 		//TreeSet t = new TreeSet(); // [Apple, Banana, Grapes, Guava, Melon, Orange]
-		TreeSet t = new TreeSet(new MyComparator1()); //ClassCastException from version 11.0 
+		TreeSet t = new TreeSet(new MyComparator1()); 
 		t.add(new StringBuffer("Grapes"));
 		t.add(new StringBuffer("Apple"));
 		t.add(new StringBuffer("Melon"));
@@ -16,7 +16,7 @@ public class TreeSetDemoSB {
 		t.add(new StringBuffer("Guava"));
 		t.add(new StringBuffer("Orange"));
 		
-		System.out.println(t);
+		System.out.println(t); // [Orange, Melon, Guava, Grapes, Banana, Apple]
 
 	}
 
