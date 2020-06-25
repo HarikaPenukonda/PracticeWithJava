@@ -7,14 +7,15 @@ public class TreeSetDemo2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		TreeSet t = new TreeSet(new MyComparator());
-		t.add(12);
-		t.add(43);
-		t.add(76);
-		t.add(35);
-		t.add(68);
-		t.add(46);
-		System.out.println(t);
+		TreeSet t = new TreeSet(new MyComparator1());
+		t.add("Grapes");
+		t.add("Banana");
+		t.add("Apple");
+		t.add("Mango");
+		t.add("Strawberry");
+		t.add("Melons");
+		System.out.println(t); // [Strawberry, Melons, Mango, Grapes, Banana, Apple] descending order
+
 		
 
 	}
