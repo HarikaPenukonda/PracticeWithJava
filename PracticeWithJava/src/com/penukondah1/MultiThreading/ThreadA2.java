@@ -10,6 +10,7 @@ public class ThreadA2 {
 		{
 			System.out.println("Main thread trying to call wait method");
 			b.wait(); //Main thread goes into waiting state and gives chance for child method to execute
+			//b.sleep(5000);
 			System.out.println("Main thread recieved notification from notify method");
 			System.out.println(b.total);
 		
