@@ -4,6 +4,8 @@ public class A {
 	
 	public synchronized void d1 (B b)
 	{
+		
+	//	B b = new b
 		System.out.println("Thread 1 starting to execute d1(B b)method"); 
 		try
 		{
