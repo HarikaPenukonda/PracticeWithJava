@@ -7,22 +7,25 @@ public class PrimeNumbers {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int num,temp;
+		int num,count=0;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number : ");
 		num = sc.nextInt();
 		
-		for(int i=2;i<=num/2;i++)
+		for(int i=1;i<=num;i++)
 		{
-			temp = num%i;	
+			if(num%i==0)
+			{
+				count++; 
+			}
 		}
-		if(temp==0)
+		if(count==2)
 		{
-			System.out.println("The entered number is not prime number");
+			System.out.println("The entered number is prime number");
 		}
 		else
-			System.out.println("The entered number is prime number");
+			System.out.println("The entered number is not prime number");
 
 	}
 
